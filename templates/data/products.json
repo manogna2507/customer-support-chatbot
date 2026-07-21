@@ -1,0 +1,23 @@
+[
+    {
+        "name": "Johnson's Baby Shampoo",
+        "price": "₹250",
+        "rating": "4.7",
+        "stock": "Available",
+        "description": "A mild baby shampoo that is gentle on the scalp and suitable for daily use."
+    },
+    {
+        "name": "Mamaearth Face Wash",
+        "price": "₹349",
+        "rating": "4.5",
+        "stock": "Available",
+        "description": "A natural face wash enriched with vitamin C for glowing skin."
+    },
+    {
+        "name": "Dove Soap",
+        "price": "₹85",
+        "rating": "4.6",
+        "stock": "Available",
+        "description": "Moisturizing beauty bar suitable for dry skin."
+    }
+]

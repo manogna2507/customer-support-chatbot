@@ -1,0 +1,37 @@
+[
+    {
+        "order_id": "ORD1001",
+        "customer": "Rahul",
+        "product": "Samsung Galaxy S25",
+        "status": "Delivered",
+        "expected_delivery": "Delivered on 18 July 2026"
+    },
+    {
+        "order_id": "ORD1002",
+        "customer": "Priya",
+        "product": "Nike Air Max",
+        "status": "Out for Delivery",
+        "expected_delivery": "21 July 2026"
+    },
+    {
+        "order_id": "ORD1003",
+        "customer": "Amit",
+        "product": "Boat Rockerz 450",
+        "status": "Processing",
+        "expected_delivery": "23 July 2026"
+    },
+    {
+        "order_id": "ORD1004",
+        "customer": "Sneha",
+        "product": "Johnson's Baby Shampoo",
+        "status": "Shipped",
+        "expected_delivery": "22 July 2026"
+    },
+    {
+        "order_id": "ORD1005",
+        "customer": "Rohan",
+        "product": "HP Laptop",
+        "status": "Cancelled",
+        "expected_delivery": "-"
+    }
+]

@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ShopSmart AI Chatbot</title>
+
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+
+<body>
+
+<div class="navbar">
+    <h2>🛍 ShopSmart AI</h2>
+
+    <div class="nav-links">
+        <a href="/">🏠 Home</a>
+        <a href="/history">📜 History</a>
+        <a href="/logout">🚪 Logout</a>
+    </div>
+</div>
+
+<div class="container">
+
+    <div class="header">
+        <h1>🤖 ShopSmart AI Assistant</h1>
+        <p>Your smart shopping companion</p>
+    </div>
+
+    <div class="quick-actions">
+        <button onclick="quickMessage('Track my order')">📦 Track Order</button>
+        <button onclick="quickMessage('Refund')">🔄 Refund</button>
+        <button onclick="quickMessage('Payment')">💳 Payment</button>
+        <button onclick="quickMessage('Product Information')">🛍 Products</button>
+    </div>
+
+    <div id="chatbox"></div>
+
+    <div class="input-area">
+
+        <input
+            type="text"
+            id="message"
+            placeholder="Ask about products, orders, payments..."
+        >
+
+        <button onclick="sendMessage()">
+            🚀 Send
+        </button>
+
+    </div>
+
+</div>
+
+<script>
+
+const input = document.getElementById("message");
+
+input.addEventListener("keypress", function(event) {
+    if(event.key==="Enter"){
+        sendMessage();
+    }
+});
+
+function currentTime(){
+    return new Date().toLocaleTimeString([],{
+        hour:"2-digit",
+        minute:"2-digit"
+    });
+}
+
+function quickMessage(text){
+    document.getElementById("message").value=text;
+    sendMessage();
+}
+
+const chat=document.getElementById("chatbox");
+
+window.onload=function(){
+
+chat.innerHTML=`
+<div class="message bot">
+<div class="bubble">
+
+🤖 <b>Hello! I'm ShopSmart AI.</b><br><br>
+
+I can help you with:<br><br>
+
+📦 Order Tracking<br>
+💳 Payments<br>
+🔄 Refunds<br>
+🛍 Product Information<br><br>
+
+Ask me anything!
+
+<div class="time">${currentTime()}</div>
+
+</div>
+</div>
+`;
+
+};
+
+async function sendMessage(){
+
+const message=input.value.trim();
+
+if(message==="") return;
+
+chat.innerHTML+=`
+<div class="message user">
+<div class="bubble">
+👤 ${message}
+<div class="time">${currentTime()}</div>
+</div>
+</div>
+`;
+
+input.value="";
+
+chat.scrollTop=chat.scrollHeight;
+
+chat.innerHTML+=`
+<div class="message bot" id="typing">
+<div class="bubble">
+🤖 Typing...
+</div>
+</div>
+`;
+
+chat.scrollTop=chat.scrollHeight;
+
+const response=await fetch("/chat",{
+method:"POST",
+headers:{
+"Content-Type":"application/json"
+},
+body:JSON.stringify({
+message:message
+})
+});
+
+const data=await response.json();
+
+document.getElementById("typing").remove();
+
+chat.innerHTML+=`
+<div class="message bot">
+<div class="bubble">
+🤖 ${data.response.replace(/\n/g,"<br>")}
+<div class="time">${currentTime()}</div>
+</div>
+</div>
+`;
+
+chat.scrollTop=chat.scrollHeight;
+
+}
+
+</script>
+
+</body>
+</html>

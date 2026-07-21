@@ -1,0 +1,187 @@
+{
+  "intents": [
+    {
+      "tag": "greeting",
+      "patterns": [
+        "Hi",
+        "Hello",
+        "Hey",
+        "Good morning",
+        "Good afternoon",
+        "Good evening",
+        "Hi there",
+        "Hey there"
+      ],
+      "responses": [
+        "Hello! Welcome to ShopSmart. How can I help you today?",
+        "Hi! What can I assist you with today?",
+        "Welcome! How may I help you?"
+      ]
+    },
+    {
+      "tag": "how_are_you",
+      "patterns": [
+        "How are you",
+        "How are you doing",
+        "How is it going",
+        "What's up",
+        "Are you okay"
+      ],
+      "responses": [
+        "I'm doing great! How can I help you today?",
+        "I'm fine. What can I assist you with?",
+        "I'm always ready to help!"
+      ]
+    },
+    {
+      "tag": "thanks",
+      "patterns": [
+        "Thanks",
+        "Thank you",
+        "Thanks a lot",
+        "Much appreciated",
+        "Awesome thanks"
+      ],
+      "responses": [
+        "You're welcome!",
+        "Happy to help!",
+        "Anytime! Let me know if you need anything else."
+      ]
+    },
+    {
+      "tag": "goodbye",
+      "patterns": [
+        "Bye",
+        "Goodbye",
+        "See you",
+        "Talk to you later",
+        "Catch you later"
+      ],
+      "responses": [
+        "Goodbye! Have a wonderful day.",
+        "Take care!",
+        "See you again soon."
+      ]
+    },
+    {
+      "tag": "order_status",
+      "patterns": [
+        "Where is my order",
+        "Track my order",
+        "Order status",
+        "Has my order shipped",
+        "Check my order"
+      ],
+      "responses": [
+        "Please provide your Order ID so I can check the status.",
+        "Sure! Send me your Order ID.",
+        "I'll help you track your order. What's your Order ID?"
+      ]
+    },
+    {
+      "tag": "refund",
+      "patterns": [
+        "I want a refund",
+        "Refund my order",
+        "Money back",
+        "Return my order",
+        "Request refund"
+      ],
+      "responses": [
+        "I'm sorry to hear that. Please provide your Order ID to start the refund process.",
+        "Your refund request can be initiated with your Order ID.",
+        "Sure, I'll help you with the refund."
+      ]
+    },
+    {
+      "tag": "cancel_order",
+      "patterns": [
+        "Cancel my order",
+        "I want to cancel",
+        "Cancel order",
+        "Stop my order",
+        "Cancel purchase"
+      ],
+      "responses": [
+        "Please provide your Order ID to cancel your order.",
+        "I'll check if your order is eligible for cancellation.",
+        "Sure! Send me your Order ID."
+      ]
+    },
+    {
+      "tag": "delivery",
+      "patterns": [
+        "When will my order arrive",
+        "Delivery date",
+        "Expected delivery",
+        "Shipping time",
+        "Delivery status"
+      ],
+      "responses": [
+        "Please provide your Order ID so I can check the delivery date.",
+        "I'll check your expected delivery.",
+        "Let me know your Order ID."
+      ]
+    },
+    {
+      "tag": "payment",
+      "patterns": [
+        "Payment failed",
+        "Unable to pay",
+        "Payment issue",
+        "Credit card problem",
+        "UPI payment failed"
+      ],
+      "responses": [
+        "Please try again after checking your payment method.",
+        "Could you tell me the payment method you used?",
+        "I'll help you resolve the payment issue."
+      ]
+    },
+    {
+      "tag": "account",
+      "patterns": [
+        "I can't login",
+        "Forgot password",
+        "Account problem",
+        "Login issue",
+        "Reset password"
+      ],
+      "responses": [
+        "You can reset your password using the 'Forgot Password' option.",
+        "I'll help you recover your account.",
+        "Please verify your registered email."
+      ]
+    },
+    {
+      "tag": "product_info",
+      "patterns": [
+        "Tell me about this product",
+        "Product details",
+        "Product information",
+        "Specifications",
+        "Features"
+      ],
+      "responses": [
+        "Please tell me the product name.",
+        "I'd be happy to provide product details.",
+        "Which product would you like to know about?"
+      ]
+    },
+    {
+      "tag": "contact_support",
+      "patterns": [
+        "Talk to support",
+        "Customer care",
+        "Need support",
+        "Contact customer service",
+        "Speak to an agent"
+      ],
+      "responses": [
+        "You can contact our support team at support@shopsmart.com.",
+        "Our customer support team is available 24/7.",
+        "I'll connect you with our support team."
+      ]
+    }
+  ]
+}

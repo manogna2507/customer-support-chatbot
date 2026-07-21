@@ -1,0 +1,163 @@
+[
+    {
+        "name": "Johnson's Baby Shampoo",
+        "price": "₹250",
+        "rating": "4.7",
+        "stock": "Available",
+        "category": "Baby Care",
+        "description": "Gentle baby shampoo suitable for daily use."
+    },
+    {
+        "name": "Johnson's Baby Lotion",
+        "price": "₹220",
+        "rating": "4.6",
+        "stock": "Available",
+        "category": "Baby Care",
+        "description": "Keeps baby's skin soft and moisturized."
+    },
+    {
+        "name": "Mamaearth Face Wash",
+        "price": "₹349",
+        "rating": "4.5",
+        "stock": "Available",
+        "category": "Skin Care",
+        "description": "Vitamin C face wash for glowing skin."
+    },
+    {
+        "name": "Cetaphil Cleanser",
+        "price": "₹499",
+        "rating": "4.8",
+        "stock": "Available",
+        "category": "Skin Care",
+        "description": "Gentle cleanser for sensitive skin."
+    },
+    {
+        "name": "Dove Soap",
+        "price": "₹85",
+        "rating": "4.6",
+        "stock": "Available",
+        "category": "Personal Care",
+        "description": "Moisturizing beauty bar."
+    },
+    {
+        "name": "Lux Soap",
+        "price": "₹60",
+        "rating": "4.3",
+        "stock": "Available",
+        "category": "Personal Care",
+        "description": "Fragrant beauty soap."
+    },
+    {
+        "name": "Colgate Toothpaste",
+        "price": "₹120",
+        "rating": "4.5",
+        "stock": "Available",
+        "category": "Oral Care",
+        "description": "Cavity protection toothpaste."
+    },
+    {
+        "name": "Oral-B Toothbrush",
+        "price": "₹90",
+        "rating": "4.4",
+        "stock": "Available",
+        "category": "Oral Care",
+        "description": "Soft bristle toothbrush."
+    },
+    {
+        "name": "Samsung Galaxy S25",
+        "price": "₹79999",
+        "rating": "4.8",
+        "stock": "Available",
+        "category": "Mobiles",
+        "description": "Flagship Android smartphone."
+    },
+    {
+        "name": "iPhone 17",
+        "price": "₹89999",
+        "rating": "4.9",
+        "stock": "Available",
+        "category": "Mobiles",
+        "description": "Latest Apple smartphone."
+    },
+    {
+        "name": "OnePlus 13",
+        "price": "₹64999",
+        "rating": "4.7",
+        "stock": "Available",
+        "category": "Mobiles",
+        "description": "High-performance Android phone."
+    },
+    {
+        "name": "HP Laptop",
+        "price": "₹58999",
+        "rating": "4.6",
+        "stock": "Available",
+        "category": "Electronics",
+        "description": "15-inch laptop for work and study."
+    },
+    {
+        "name": "Dell Inspiron",
+        "price": "₹61999",
+        "rating": "4.7",
+        "stock": "Available",
+        "category": "Electronics",
+        "description": "Reliable everyday laptop."
+    },
+    {
+        "name": "Boat Rockerz 450",
+        "price": "₹1499",
+        "rating": "4.4",
+        "stock": "Available",
+        "category": "Audio",
+        "description": "Wireless Bluetooth headphones."
+    },
+    {
+        "name": "JBL Flip 6",
+        "price": "₹9999",
+        "rating": "4.8",
+        "stock": "Available",
+        "category": "Audio",
+        "description": "Portable Bluetooth speaker."
+    },
+    {
+        "name": "Sony WH-1000XM5",
+        "price": "₹29999",
+        "rating": "4.9",
+        "stock": "Available",
+        "category": "Audio",
+        "description": "Premium noise-cancelling headphones."
+    },
+    {
+        "name": "Nike Air Max",
+        "price": "₹6999",
+        "rating": "4.7",
+        "stock": "Available",
+        "category": "Footwear",
+        "description": "Comfortable running shoes."
+    },
+    {
+        "name": "Adidas Ultraboost",
+        "price": "₹8999",
+        "rating": "4.8",
+        "stock": "Available",
+        "category": "Footwear",
+        "description": "Premium sports shoes."
+    },
+    {
+        "name": "Puma Sneakers",
+        "price": "₹4999",
+        "rating": "4.5",
+        "stock": "Available",
+        "category": "Footwear",
+        "description": "Stylish everyday sneakers."
+    },
+    {
+        "name": "Wildcraft Backpack",
+        "price": "₹1799",
+        "rating": "4.6",
+        "stock": "Available",
+        "category": "Accessories",
+        "description": "Durable backpack for college."
+    }
+    
+]
