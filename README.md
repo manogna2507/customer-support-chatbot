@@ -258,22 +258,6 @@ The trained model and supporting vocabulary/class files are generated under:
 
 models/
 
-## 📸 Screenshots
 
-### Login Page
-![Login](screenshots/login.png)
-
-### Signup Page
-![Signup](screenshots/signup.png)
-
-### Chatbot Home
-![Chatbot](screenshots/chatbot.png)
-
-### Product Search
-![Product Search](screenshots/search.png)
-
-### Chat History
-![Chat History](screenshots/history.png)
 👩‍💻 Developed By
-
 Manogna Gampala
