@@ -84,25 +84,25 @@ Intent Prediction
 Response Selection
 Model Architecture
 Input Layer
-    ↓
+     ↓
 Dense Layer (128 neurons, ReLU)
-    ↓
+     ↓
 Dropout (0.5)
-    ↓
+     ↓
 Dense Layer (64 neurons, ReLU)
-    ↓
+     ↓
 Dropout (0.5)
-    ↓
+     ↓
 Output Layer (7 intents, Softmax)
-
-The model uses:
-
-Adam optimizer
+Training Configuration
+Optimizer: Adam
 Learning rate: 0.001
-Categorical cross-entropy loss
-100 training epochs
+Loss function: Categorical Cross-Entropy
+Training epochs: 100
 Batch size: 16
-80/20 stratified train/test split
+Train/Test split: 80/20
+Stratified test split
+Vocabulary size: 448
 🎯 Supported Intents
 
 The final classifier contains 7 customer-support intents:
@@ -126,12 +126,13 @@ Test Accuracy	99.65%
 Macro Precision	0.9966
 Macro Recall	0.9965
 Macro F1-score	0.9965
-Dataset
-Total patterns: 1,435
-Number of intents: 7
-Training samples: 1,148
-Test samples: 287
-Vocabulary size: 448
+Dataset Statistics
+Statistic	Value
+Total patterns	1,435
+Number of intents	7
+Training samples	1,148
+Test samples	287
+Vocabulary size	448
 
 Note: These metrics represent performance on a held-out split from the prepared dataset. They should not be interpreted as production or real-world customer-support accuracy.
 
@@ -273,7 +274,6 @@ models/
 
 ### Chat History
 ![Chat History](screenshots/history.png)
+👩‍💻 Developed By
 
-## 👩‍💻 Developed By
-
-**Manogna Gampala**
+Manogna Gampala
