@@ -1,3 +1,5 @@
+import os
+BASE_DIR = os.path.dirname(os.path.abspath(__file__))
 import json
 import random
 import pickle
@@ -26,9 +28,11 @@ with open("data/intents.json", "r") as file:
 # Load products
 products = get_all_products()
 
-# Temporary orders list
-# Replace this later with your actual orders database/file
-orders = []
+# Load orders
+ORDERS_PATH = os.path.join(BASE_DIR, 'data', 'orders.json')
+
+with open(ORDERS_PATH, 'r', encoding='utf-8') as file:
+    orders = json.load(file)
 
 
 def clean_up_sentence(sentence):
@@ -117,7 +121,7 @@ def search_product(message):
     for product in matches[:3]:
         response += (
             f"📦 {product['name']}\n"
-            f"💰 ₹{product['price']}\n"
+            f"💰 {product['price']}\n"
             f"⭐ {product['rating']}/5\n"
             f"📂 {product['category']}\n\n"
         )
